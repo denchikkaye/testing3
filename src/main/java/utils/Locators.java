@@ -5,7 +5,8 @@ import org.openqa.selenium.By;
 public interface Locators {
 
     public interface MainPage {
-        By BUTTON = By.xpath("(//span[@class='title text-brown transition-200 font-medium'])[1]");
+        By BUTTON = By.xpath("(//div[@class='flex items-center justify-center'][contains(text(),'Хостинг')])[1]");
+        By BUTTON2 = By.xpath("(//span[@class='title text-brown transition-200 font-medium'])[1]");
     }
 
     public interface SearchResultPage {
