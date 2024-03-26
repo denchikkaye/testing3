@@ -3,7 +3,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import pages.MainPage;
 
 public class SmokeTest {
@@ -24,6 +24,7 @@ public class SmokeTest {
 
         String headerText = mainPage
                 .clickInButtonField()
+                .clickInButtonField2()
                 .getHeaderText();
         String assertionError = null;
         try {
